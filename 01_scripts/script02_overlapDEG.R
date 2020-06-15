@@ -7,6 +7,7 @@
 
 # Install dependencies
 library(dplyr)
+library(stringr)
 
 # Read in ballgown files
 inputpaths <- dir("./00_data", full.names = TRUE)
@@ -24,10 +25,10 @@ filter_deg <- function(df, cutoff){
   df %>% mutate(logfc = log2(fc)) %>% 
     mutate(abs_fc = abs(logfc)) %>% 
     filter(qval < 0.05 & abs_fc > cutoff) %>% 
-    arrange(desc(qval), abs_fc) %>% 
-    filter(abs_fc == max(abs_fc))
+    arrange(desc(qval), abs_fc) %>%
+    filter(str_detect(gene_name, "MSTRG*", negate = TRUE))
 }
-
+# MUST CHECK TO SEE IF LOWER FC IS REMOVED!
 
 #-------------------------------------------------------------------------------------#
 # Section: Overlap DEG
@@ -44,6 +45,21 @@ filtered_deg[[1]] -> asiandeg
 filtered_deg[[2]] -> blackdeg
 filtered_deg[[3]] -> whitedeg
 
+inner_join(asiandeg, whitedeg, by = "gene_name", suffix = c(".asian", ".white")) -> joined
+inner_join(joined, blackdeg, by = "gene_name") -> joined.all
 
+joined.all %>%
+  rename(logfc.black = logfc) %>%
+  rename(abs_fc.black = abs_fc) %>%
+  rename(fc.black = fc) %>%
+  rename(pval.black = pval) %>%
+  rename(qval.black = qval) -> renamed.all
 
+renamed.all %>% distinct(gene_name, .keep_all = TRUE) -> renamed.all
+
+write.csv(asiandeg, "./02_output/asian_deg.csv")
+write.csv(blackdeg, "./02_output/black_deg.csv")
+write.csv(whitedeg, "./02_output/white_deg.csv")
+
+write.csv(renamed.all, "./02_output/overlapDEG_stageA_allrace.csv")
 
