@@ -5,7 +5,7 @@
 # R Version: 4.0.1 "See Things Now"
 # Date Created: 20200615
 # Notes: https://www.bioconductor.org/packages/release/bioc/vignettes/sevenbridges/inst/doc/bioc-workflow.html
-# Authentication Code: 5d47c49a08ad4efba2b445b4f20c4c9d
+# Authentication Code: XXXXX
 #-------------------------------------------------------------------------------------#
 
 # Dependencies
@@ -15,7 +15,7 @@ library("sevenbridges")
 #a <- Auth(token = "5d47c49a08ad4efba2b445b4f20c4c9d", platform = "aws-us")
 
 # Set environment for API using Authentication Token
-sbg_set_env("https://cgc-api.sbgenomics.com/v2", "5d47c49a08ad4efba2b445b4f20c4c9d")
+sbg_set_env("https://cgc-api.sbgenomics.com/v2", "XXXX")
 
 # Create Auth object using credentials from environment
 a <- Auth(from = "env")
