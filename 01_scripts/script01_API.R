@@ -11,9 +11,6 @@
 # Dependencies
 library("sevenbridges")
 
-# Authentication token
-#a <- Auth(token = "5d47c49a08ad4efba2b445b4f20c4c9d", platform = "aws-us")
-
 # Set environment for API using Authentication Token
 sbg_set_env("https://cgc-api.sbgenomics.com/v2", "XXXX")
 
