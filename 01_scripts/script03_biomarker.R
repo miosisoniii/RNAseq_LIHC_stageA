@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------------#
-# Project: Ballgown overlap
-# Purpose: Identify overlapping genes stratified across race
+# Project: Biomarker identification
+# Purpose: Identify biomarkers from literature in BG output for Stage A
 # Author: Artemio Sison III
 # R Version: 4.0.1 "Holding the Windsock"
 #-------------------------------------------------------------------------------------#
@@ -55,6 +55,9 @@ retain_topfc <- function(df){
 # + name df's in biomarker_allrace object
 # + write biomarker list with all transcript copies to csv
 # + filter for transcript with greatest absolute fold change
+# + write each race's transcript to csv
+# + join all race to one dataset
+# + write to csv
 #-------------------------------------------------------------------------------------#
 
 #fc.cutoff <- 2.0
@@ -89,17 +92,17 @@ intermediatenames <- c("asian", "black", "white")
 # set names for biomarker_allraces object
 names(biomarker_allraces) <- intermediatenames[1:3]
 # write biomarker_allraces object to cvs, to vet for transcript copies with favorable FC
-lapply(1:length(biomarker_allraces), 
-       function(i) write.csv(biomarker_allraces[[i]],
-                             file = paste0("./02_output/03_biomarkerOutput/", 
-                                           names(biomarker_allraces[i]), "_biomarkerRetained.csv"), row.names = FALSE))
+lapply(1:length(biomarker_allraces), function(i) write.csv(biomarker_allraces[[i]],
+                                                           file = paste0("./02_output/03_biomarkerOutput/", names(biomarker_allraces[i]), "_biomarkerRetained.csv"), row.names = FALSE))
 
 
 topfc_allraces <- lapply(biomarker_allraces, function(x) retain_topfc(x))
+names(topfc_allraces) <- intermediatenames[1:3]
+lapply(1:length(topfc_allraces), function(i) write.csv(topfc_allraces[[i]],
+                                                           file = paste0("./02_output/03_biomarkerOutput/", names(topfc_allraces[i]), "_biomarkerTopFC.csv"), row.names = FALSE))
 
-
-inner_join(biomarker_topfc[[1]],biomarker_topfc[[2]], by = "gene_name", suffix = c(".asian", ".black")) -> asianblackmerge
-left_join(asianblackmerge, biomarker_topfc[[3]], by = "gene_name") -> allmerge
+inner_join(topfc_allraces[[1]],topfc_allraces[[2]], by = "gene_name", suffix = c(".asian", ".black")) -> asianblackmerge
+left_join(asianblackmerge, topfc_allraces[[3]], by = "gene_name") -> allmerge
 
 allmerge %>% rename(pval.white = pval) %>%
   rename(abs_fc.white = abs_fc) %>%
@@ -107,6 +110,4 @@ allmerge %>% rename(pval.white = pval) %>%
   rename(logfc.white = logfc) %>%
   rename(qval.white =  qval) -> allmerge.final
 
-
-
-write.csv(results_genes, paste0("./", race, "/02_ballgown/resulttables/02_genenames.csv"))
+write.csv(allmerge.final, "./02_output/03_biomarkerOutput/allrace_biomarkerTopFC.csv")
