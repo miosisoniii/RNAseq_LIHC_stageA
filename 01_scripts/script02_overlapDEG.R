@@ -37,9 +37,11 @@ filter_deg <- function(df, cutoff){
 # + select appropriate variables
 # + filter for DEG with FC > 2.0, create absFC, logFC, select genes with highest FC
 #-------------------------------------------------------------------------------------#
+fc.cutoff <- 1.0
+
 selectedvars <- lapply(race_dfs, selectvar) 
 
-filtered_deg <- lapply(selectedvars, filter_deg, 2.0)
+filtered_deg <- lapply(selectedvars, filter_deg, fc.cutoff)
 
 filtered_deg[[1]] -> asiandeg
 filtered_deg[[2]] -> blackdeg
@@ -57,9 +59,16 @@ joined.all %>%
 
 renamed.all %>% distinct(gene_name, .keep_all = TRUE) -> renamed.all
 
-write.csv(asiandeg, "./02_output/asian_deg.csv")
-write.csv(blackdeg, "./02_output/black_deg.csv")
-write.csv(whitedeg, "./02_output/white_deg.csv")
+write.csv(asiandeg, "./02_output/asian_degStageA_FC1.csv")
+write.csv(blackdeg, "./02_output/black_degStageA_FC1.csv")
+write.csv(whitedeg, "./02_output/white_degStageA_FC1.csv")
 
-write.csv(renamed.all, "./02_output/overlapDEG_stageA_allrace.csv")
+write.csv(renamed.all, "./02_output/allrace_overlapDEG_stageA_FC1.csv")
+
+#FC 2.0
+# write.csv(asiandeg, "./02_output/asian_degStageA_FC2.csv")
+# write.csv(blackdeg, "./02_output/black_degStageA_FC2.csv")
+# write.csv(whitedeg, "./02_output/white_degStageA_FC2.csv")
+# 
+# write.csv(renamed.all, "./02_output/allrace_overlapDEG_stageA_allrace.csv")
 
