@@ -59,16 +59,16 @@ joined.all %>%
 
 renamed.all %>% distinct(gene_name, .keep_all = TRUE) -> renamed.all
 
-write.csv(asiandeg, "./02_output/asian_degStageA_FC1.csv")
-write.csv(blackdeg, "./02_output/black_degStageA_FC1.csv")
-write.csv(whitedeg, "./02_output/white_degStageA_FC1.csv")
+write.csv(asiandeg, "./02_output/02_overlapDEGoutput/asian_degStageA_FC1.csv")
+write.csv(blackdeg, "./02_output/02_overlapDEGoutput/black_degStageA_FC1.csv")
+write.csv(whitedeg, "./02_output/02_overlapDEGoutput/white_degStageA_FC1.csv")
 
-write.csv(renamed.all, "./02_output/allrace_overlapDEG_stageA_FC1.csv")
+write.csv(renamed.all, "./02_output/02_overlapDEGoutput/allrace_overlapDEG_stageA_FC1.csv")
 
 #FC 2.0
-# write.csv(asiandeg, "./02_output/asian_degStageA_FC2.csv")
-# write.csv(blackdeg, "./02_output/black_degStageA_FC2.csv")
-# write.csv(whitedeg, "./02_output/white_degStageA_FC2.csv")
+# write.csv(asiandeg, "./02_output/02_overlapDEGoutput/asian_degStageA_FC2.csv")
+# write.csv(blackdeg, "./02_output/02_overlapDEGoutput/black_degStageA_FC2.csv")
+# write.csv(whitedeg, "./02_output/02_overlapDEGoutput/white_degStageA_FC2.csv")
 # 
-# write.csv(renamed.all, "./02_output/allrace_overlapDEG_stageA_allrace.csv")
+# write.csv(renamed.all, "./02_output/02_overlapDEGoutput/allrace_overlapDEG_stageA_allrace.csv")
 
