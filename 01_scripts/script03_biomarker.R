@@ -91,8 +91,8 @@ names(biomarker_allraces) <- intermediatenames[1:3]
 # write biomarker_allraces object to cvs, to vet for transcript copies with favorable FC
 lapply(1:length(biomarker_allraces), 
        function(i) write.csv(biomarker_allraces[[i]],
-                             file = paste0("./02_output/03_biomarkerOutput/", names(biomarker_allraces[i]), "_biomarkerRetained.csv"),
-                             row.names = FALSE))
+                             file = paste0("./02_output/03_biomarkerOutput/", 
+                                           names(biomarker_allraces[i]), "_biomarkerRetained.csv"), row.names = FALSE))
 
 
 topfc_allraces <- lapply(biomarker_allraces, function(x) retain_topfc(x))
