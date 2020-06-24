@@ -92,3 +92,35 @@ allmerge %>% rename(pval.white = pval) %>%
   rename(qval.white =  qval) -> allmerge.final
 
 write.csv(allmerge.final, "./03_miRNA/allrace_miRNA.csv")
+
+#-------------------------------------------------------------------------------------#
+# miRNA Biomarker targets
+# Found using Xu et al. 2018, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6171016/
+# + filter pre-filtered for miRNA targets
+# + join lists by race
+#-------------------------------------------------------------------------------------#
+mirna$targets -> targets.mirna
+
+allrace.targets <- lapply(clean_dfs, function(x) filter(x, gene_name %in% targets.mirna))
+
+# write function for using lapply() for writing csv because we need to continually retain the transcrips that are being duplicated
+# in the case that the transcript copies with a higher or lower fold change are significant
+
+joinfunction <- function(listobject){
+  inner_join(listobject[[1]], listobject[[2]], by="gene_name", suffix=c("asian","black")) -> ABmerge
+  inner_join(ABmerge, listobject[[3]], by="gene_name") -> ABWmerge
+  ABWmerge %>% rename(pval.white = pval) %>%
+    rename(abs_fc.white = abs_fc) %>%
+    rename(fc.white = fc) %>%
+    rename(logfc.white = logfc) %>%
+    rename(qval.white =  qval) -> ABWmerge
+  print(paste0("# genes for Asian: ", nrow(listobject[[1]])))
+  print(paste0("# genes for Black: ", nrow(listobject[[2]])))
+  print(paste0("# genes for White: ", nrow(listobject[[3]])))
+  print(paste0("Total number of overlapped genes: ", nrow(ABWmerge)))
+  return(ABWmerge)
+}
+
+joinfunction(allrace.targets) -> allracejoined
+
+# can include option/argument in function here to remove redundant transcripts and keep only those with Qval < 0.05 or greatest absolute F
