@@ -1,6 +1,6 @@
 # Ignore output data files
 ./02_output/*
-
+./00_data/stageA/*
 # History files
 .Rhistory
 .Rapp.history

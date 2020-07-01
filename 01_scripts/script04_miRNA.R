@@ -13,11 +13,17 @@ library(stringr)
 library(tidyr)
 
 #-------------------------------------------------------------------------------------#
+# Section: Adjust Dataset Names
+#-------------------------------------------------------------------------------------#
+dataname <- "stage1"
+#dataname <- "stageA"
+
+#-------------------------------------------------------------------------------------#
 # Input files
 # + Load PRE-filtered FC/qval cutoff bg output 
 # + Load miRNA biomarkers
 #-------------------------------------------------------------------------------------#
-inputpaths <- dir("./00_data", full.names = TRUE)
+inputpaths <- dir("./00_data/stage1", full.names = TRUE)
 race_dfs <- lapply(inputpaths, function(x) read.delim(x))
 
 races <- c("asian", "black", "white")
@@ -79,7 +85,7 @@ allmiRNA_allraces <- lapply(clean_dfs, function(x) filter(x, str_detect(gene_nam
 
 names(allmiRNA_allraces) <- races[1:3]
 lapply(1:length(allmiRNA_allraces), function(i) write.csv(allmiRNA_allraces[[i]],
-                                                       file = paste0("./03_miRNA/", names(allmiRNA_allraces[i]), "_miRNA_retained.csv"), row.names = FALSE))
+                                                       file = paste0("./02_output/03_biomarkerOutput/stage1/", names(allmiRNA_allraces[i]), "_miRNA_retained_", dataname, ".csv"), row.names = FALSE))
 
 topfc_mirna <- lapply(allmiRNA_allraces, function(x) retain_topfc(x))
 inner_join(topfc_mirna [[1]],topfc_mirna [[2]], by = "gene_name", suffix = c(".asian", ".black")) -> asianblackmerge
@@ -91,7 +97,7 @@ allmerge %>% rename(pval.white = pval) %>%
   rename(logfc.white = logfc) %>%
   rename(qval.white =  qval) -> allmerge.final
 
-write.csv(allmerge.final, "./03_miRNA/allrace_miRNA.csv")
+write.csv(paste0(allmerge.final, "./02_output/03_biomarkerOutput/stage1/allrace_miRNA_", dataname, ".csv"))
 
 #-------------------------------------------------------------------------------------#
 # miRNA Biomarker targets
@@ -103,17 +109,17 @@ mirna$targets -> targets.mirna
 
 allrace.targets <- lapply(clean_dfs, function(x) filter(x, gene_name %in% targets.mirna))
 
-# write function for using lapply() for writing csv because we need to continually retain the transcrips that are being duplicated
-# in the case that the transcript copies with a higher or lower fold change are significant
-
+# function that takes rows with unique gene names and the lowest qval
 joinfunction <- function(listobject){
-  inner_join(listobject[[1]], listobject[[2]], by="gene_name", suffix=c("asian","black")) -> ABmerge
+  lapply(listobject, function(x) x %>% group_by(gene_name) %>% arrange(-abs_fc) %>% slice(1)) -> listobject
+  inner_join(listobject[[1]], listobject[[2]], by="gene_name", suffix=c(".asian",".black")) -> ABmerge
   inner_join(ABmerge, listobject[[3]], by="gene_name") -> ABWmerge
   ABWmerge %>% rename(pval.white = pval) %>%
     rename(abs_fc.white = abs_fc) %>%
     rename(fc.white = fc) %>%
     rename(logfc.white = logfc) %>%
     rename(qval.white =  qval) -> ABWmerge
+  #ABWmerge %>% group_by(gene_name)
   print(paste0("# genes for Asian: ", nrow(listobject[[1]])))
   print(paste0("# genes for Black: ", nrow(listobject[[2]])))
   print(paste0("# genes for White: ", nrow(listobject[[3]])))
@@ -122,5 +128,7 @@ joinfunction <- function(listobject){
 }
 
 joinfunction(allrace.targets) -> allracejoined
+
+write.csv(allracejoined, paste0("./02_output/03_biomarkerOutput/stage1/stage1allrace_mirnabiomarkertargets.csv") )
 
 # can include option/argument in function here to remove redundant transcripts and keep only those with Qval < 0.05 or greatest absolute F

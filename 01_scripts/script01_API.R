@@ -42,9 +42,9 @@ p$file(
     # race = "black or african american",
     # race = "white"
   #),
-  tag = c("bg_output")
+  tag = c("bg_stage1out")
 ) -> transcripts
 
 # Move filtered files into working R Environment via downloading
 # Download transcripts to ./00_data folder
-download(transcripts, "./00_data/")
+download(transcripts, "./00_data/stage1")

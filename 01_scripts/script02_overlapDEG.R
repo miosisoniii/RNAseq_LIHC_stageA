@@ -10,7 +10,7 @@ library(dplyr)
 library(stringr)
 
 # Read in ballgown files
-inputpaths <- dir("./00_data", full.names = TRUE)
+inputpaths <- dir("./00_data/stage1", full.names = TRUE)
 race_dfs <- lapply(inputpaths, function(x) read.delim(x))
 
 
@@ -59,11 +59,11 @@ joined.all %>%
 
 renamed.all %>% distinct(gene_name, .keep_all = TRUE) -> renamed.all
 
-write.csv(asiandeg, "./02_output/02_overlapDEGoutput/asian_degStageA_FC1.csv")
-write.csv(blackdeg, "./02_output/02_overlapDEGoutput/black_degStageA_FC1.csv")
-write.csv(whitedeg, "./02_output/02_overlapDEGoutput/white_degStageA_FC1.csv")
+write.csv(asiandeg, "./02_output/02_overlapDEGoutput/stage1/asian_degStage1_FC1.csv")
+write.csv(blackdeg, "./02_output/02_overlapDEGoutput/stage1/black_degStage1_FC1.csv")
+write.csv(whitedeg, "./02_output/02_overlapDEGoutput/stage1/white_degStage1_FC1.csv")
 
-write.csv(renamed.all, "./02_output/02_overlapDEGoutput/allrace_overlapDEG_stageA_FC1.csv")
+write.csv(renamed.all, "./02_output/02_overlapDEGoutput/stage1/allrace_overlapDEG_stage1_FC1.csv")
 
 #FC 2.0
 # write.csv(asiandeg, "./02_output/02_overlapDEGoutput/asian_degStageA_FC2.csv")

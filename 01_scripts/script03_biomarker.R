@@ -15,7 +15,7 @@ library(stringr)
 # Input files
 # + Load PRE-filtered FC/qval cutoff bg output 
 #-------------------------------------------------------------------------------------#
-inputpaths <- dir("./00_data", full.names = TRUE)
+inputpaths <- dir("./00_data/stage1", full.names = TRUE)
 race_dfs <- lapply(inputpaths, function(x) read.delim(x))
 
 #-------------------------------------------------------------------------------------#
@@ -91,15 +91,15 @@ biomarker_allraces <- lapply(filtered_deg, function(x) filter(x, gene_name %in% 
 intermediatenames <- c("asian", "black", "white")
 # set names for biomarker_allraces object
 names(biomarker_allraces) <- intermediatenames[1:3]
-# write biomarker_allraces object to cvs, to vet for transcript copies with favorable FC
+# write biomarker_allraces object to csv, to vet for transcript copies with favorable FC
 lapply(1:length(biomarker_allraces), function(i) write.csv(biomarker_allraces[[i]],
-                                                           file = paste0("./02_output/03_biomarkerOutput/", names(biomarker_allraces[i]), "_biomarkerRetained.csv"), row.names = FALSE))
+                                                           file = paste0("./02_output/03_biomarkerOutput/stage1/", names(biomarker_allraces[i]), "_biomarkerRetained.csv"), row.names = FALSE))
 
 
 topfc_allraces <- lapply(biomarker_allraces, function(x) retain_topfc(x))
 names(topfc_allraces) <- intermediatenames[1:3]
 lapply(1:length(topfc_allraces), function(i) write.csv(topfc_allraces[[i]],
-                                                           file = paste0("./02_output/03_biomarkerOutput/", names(topfc_allraces[i]), "_biomarkerTopFC.csv"), row.names = FALSE))
+                                                           file = paste0("./02_output/03_biomarkerOutput/stage1/", names(topfc_allraces[i]), "_biomarkerTopFC.csv"), row.names = FALSE))
 
 inner_join(topfc_allraces[[1]],topfc_allraces[[2]], by = "gene_name", suffix = c(".asian", ".black")) -> asianblackmerge
 left_join(asianblackmerge, topfc_allraces[[3]], by = "gene_name") -> allmerge
