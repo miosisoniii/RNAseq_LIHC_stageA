@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------------#
-# Project: HCC treatement identification - Stage A
-# Purpose: Identify HCC treatment genes from literature in BG output for Stage A
+# Project: HCC treatement identification - Stage 1
+# Purpose: Identify HCC treatment genes from literature in BG output for Stage 1
 # Author: Artemio Sison III
 # R Version: 4.0.1 "Holding the Windsock"
 #-------------------------------------------------------------------------------------#

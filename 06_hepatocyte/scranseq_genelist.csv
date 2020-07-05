@@ -1,0 +1,592 @@
+﻿gene,alias,cluster,zone,celltype
+HSD11B1,"11-DH, 11-beta-HSD1, CORTRD2, HDL, HSD11, HSD11B, HSD11L, SDR26C1",1,,centralvenoushepatocyte
+APOM,"G3a, HSPC336, NG20, apo-M",1,,centralvenoushepatocyte
+PON3,,1,,centralvenoushepatocyte
+TTC36,HBP21,1,,centralvenoushepatocyte
+BCHE,"CHE1, CHE2, E1",1,,centralvenoushepatocyte
+F10,"FX, FXA",1,,centralvenoushepatocyte
+APOC4-APOC2,,1,,centralvenoushepatocyte
+GOLT1A,"CGI-141, GOT1, HMFN1187, YMR292W, hGOT1b",1,,centralvenoushepatocyte
+ADH1A,ADH1,1,,centralvenoushepatocyte
+AQP9,"AQP-9, HsT17287, SSC1, T17287",1,,centralvenoushepatocyte
+G6PC,"G6PC1, G6PT, G6Pase, GSD1, GSD1a",1,,centralvenoushepatocyte
+PROX1,,1,,centralvenoushepatocyte
+RCAN1,"ADAPT78, CSP1, DSC1, DSCR1, MCIP1, RCN1",1,,centralvenoushepatocyte
+HAMP,"HEPC, HFE2B, LEAP1, PLTR",1,,centralvenoushepatocyte
+GPD1,"GPD-C, GPDH-C, HTGTI",1,,centralvenoushepatocyte
+CTH,,1,,centralvenoushepatocyte
+TKFC,"DAK, NET45",1,,centralvenoushepatocyte
+G0S2,,1,,centralvenoushepatocyte
+GHR,"GHBP, GHIP",1,,centralvenoushepatocyte
+ABCC2,"ABC30, CMOAT, DJS, MRP2, cMRP",1,,centralvenoushepatocyte
+CD2,"LFA-2, SRBC, T11",2,,tcell
+TRAC,"IMD7, TCRA, TRA, TRCA",2,,tcell
+CD3D,"CD3-DELTA, IMD19, T3D",2,,tcell
+CCL5,"D17S136E, RANTES, SCYA5, SIS-delta, SISd, TCP228, eoCP",2,,tcell
+TRBC2,TCRBC2,2,,tcell
+GZMA,"CTLA3, HFSP",2,,tcell
+CD3E,"IMD18, T3E, TCRE",2,,tcell
+IL7R,"CD127, CDW127, IL-7R-alphaA, ILRA, IL7R",2,,tcell
+IL32,"IL-32alpha, IL-32beta, IL-32delta, IL-32gamma, NK4, TAIF, TAIFa, TAIFb, TAIFc, TAIFd",2,,tcell
+CD3G,"CD3-GAMMA, IMD17, T3G",2,,tcell
+CXCR4,"CD184, D2S201E, FB22, HM89, HSY3RR, LAP-3, LAP3, LCR1, LESTR, NPY3R, NPYR, NPYRL, NPYY3R, WHIM, WHIMS",2,,tcell
+S100A4,"18A2, 42A, CAPL, FSP1, MTS1, P9KA, PEL98",2,,tcell
+TMSB4X,"FX, PTMB4, TB4X, TMSB4",2,,tcell
+HCST,"DAP10, KAP10, PIK3AP",2,,tcell
+BTG1,APRO2,2,,tcell
+JUNB,AP-1,2,,tcell
+RPS3,S3,2,,tcell
+CD52,"CDW52, EDDM5",2,,tcell
+CORO1A,"CLABP, CLIPINA, HCORO1, IMD8, TACO, p57",2,,tcell
+ZFP36L2,"BRF2, ERF-2, ERF2, RNF162C, TIS11D",2,,tcell
+BCHE,"CHE1, CHE2, E1",3,,centralvenoussinusoid
+LINC00261,"ALIEN, C20orf56, DEANR1, HCCDR1, NCRNA00261, TCONS_00027846, onco-lncRNA-17",3,,centralvenoussinusoid
+ALDH6A1,"MMSADHA, MMSDH",3,,centralvenoussinusoid
+AR,"AIS8, DHTR, HUMARA, HYSP1, KD, NR3C4, SBMA, SMAX1, TFM, AR",3,,centralvenoussinusoid
+G6PC,"G6PC1, G6PT, G6Pase, GSD1, GSD1a",3,,centralvenoussinusoid
+GHR,"GHBP, GHIP",3,,centralvenoussinusoid
+RP11-390F4.3,,3,,centralvenoussinusoid
+RCAN1,"ADAPT78, CSP1, DSC1, DSCR1, MCIP1, RCN1",3,,centralvenoussinusoid
+PLIN1,"FPLD4, PERI, PLIN",3,,centralvenoussinusoid
+RP4-710M16.2,,3,,centralvenoussinusoid
+S100A8,"60B8AG, CAGA, CFAG, CGLA, CP-10, L1Ag, MA387, MIF, MRP8, NIF, P8",4,,kupffercell
+LYZ,RP11-1143G9.4,4,,kupffercell
+S100A9,"LYZF1, LZM",4,,kupffercell
+RP11-1143G9.4,,4,,kupffercell
+VCAN,"CSPG2, ERVR, GHAP, PG-M, WGN, WGN1",4,,kupffercell
+S100A6,"2A9, 5B10, CABP, CACY, PRA, S10A6",4,,kupffercell
+HLA-DRA,HLA-DRA1,4,,kupffercell
+MNDA,PYHIN3,4,,kupffercell
+TYROBP,"DAP12, KARAP, PLOSL",4,,kupffercell
+FCN1,FCNM,4,,kupffercell
+CD74,"DHLAG, HLADG, II, Ia-GAMMA",4,,kupffercell
+S100A11,"HEL-S-43, MLN70, S100C",4,,kupffercell
+FCER1G,FCRG,4,,kupffercell
+C1orf162,,4,,kupffercell
+CSTA,"AREI, PSS4, STF1, STFA",4,,kupffercell
+LST1,"B144, D6S49E, LST-1",4,,kupffercell
+S100A4,"18A2, 42A, CAPL, FSP1, MTS1, P9KA, PEL98",4,,kupffercell
+MS4A6A,"4SPAN3, 4SPAN3.2, CD20L3, CDA01, MS4A6, MST090, MSTP090",4,,kupffercell
+COTL1,CLP,4,,kupffercell
+TMSB10,"MIG12, TB10",4,,kupffercell
+AIF1,"AIF-1, IBA1, IRT-1, IRT1",4,,kupffercell
+CLEC7A,"BGR, CANDF4, CD369, CLECSF12, DECTIN1, SCARE2",4,,kupffercell
+CTSS,,4,,kupffercell
+RNASE6,"RAD1, RNS6, RNasek6",4,,kupffercell
+CFD,"ADIPSIN, ADN, DF, PFD",4,,kupffercell
+S100A12,"CAAF1, CAGC, CGRP, ENRAGE, MRP-6, MRP6, p6",4,,kupffercell
+SCD,"FADS5, MSTP0081, SCDOS, hSCD1, SCD",5,,periportalEC
+HMGCS1,HMGCS,5,,periportalEC
+TM7SF2,"ANG1, DHCR14A, NET47",5,,periportalEC
+TMEM97,MAC30,5,,periportalEC
+CP,CP-2,5,,periportalEC
+CRP,PTX1,5,,periportalEC
+SLPI,"ALK1, ALP, BLPI, HUSI, HUSI-I, MPI, WAP4, WFDC4",5,,periportalEC
+ACAT2,,5,,periportalEC
+MSMO1,"DESP4, ERG25, MCCPD, SC4MOL",5,,periportalEC
+EBP,"CDPX2, CHO2, CPX, CPXD, MEND",5,,periportalEC
+FDFT1,"DGPT, ERG9, SQS, SS",5,,periportalEC
+SAA2,,5,,periportalEC
+SC5D,"ERG3, S5DESL, SC5D",5,,periportalEC
+A2M,"A2MD, CPAMD5, FWP007, S863-7",5,,periportalEC
+IFITM2,"1-8D, DSPA2c",5,,periportalEC
+ATF5,"ATFX, HMFN0395",5,,periportalEC
+ITIH3,"H3P, ITI-HC3, SHAP",5,,periportalEC
+CFHR1,"CFHL, CFHL1, CFHL1PP, FHR1, H36-1, H36-2, HFL1, HFL2, CFHR1",5,,periportalEC
+C3,"AHUS5, ARMD9, ASPa, C3b, CPAMD1, HEL-S-62p, C3",5,,periportalEC
+SPINK1,"PCTT, PSTI, Spink3, TATI, TCP",5,,periportalEC
+SERPINA1,"A1A, A1AT, AAT, PI, PI1, PRO2275, alpha1AT, nNIF",5,,periportalEC
+IFITM3,"1-8U, DSPA2b, IP15",5,,periportalEC
+FGL1,"HFREP1, HP-041, LFIRE-1, LFIRE1",5,,periportalEC
+FGA,Fib2,5,,periportalEC
+INSIG1,CL6,5,,periportalEC
+AGT,"ANHU, SERPINA8, hFLT1",5,,periportalEC
+FDPS,"FPPS, FPS, POROK9",5,,periportalEC
+FABP1,"FABPL, L-FABP",5,,periportalEC
+IDI1,"IPP1, IPPI1",5,,periportalEC
+MT1H,"MT-0, MT-1H, MT-IH, MT1",5,,periportalEC
+GC,"DBP, DBP/GC, GRD3, Gc-MAF, GcMAF, HEL-S-51, VDBG, VDBP",5,,periportalEC
+FGB,HEL-S-78p,5,,periportalEC
+FGG,,5,,periportalEC
+MT2A,"MT-2, MT-II, MT2",5,,periportalEC
+APOA2,"Apo-AII, ApoA-II, apoAII",5,,periportalEC
+CES1,"ACAT, CE-1, CEH, CES2, HMSE, HMSE1, PCE-1, REH, SES1, TGH, hCE-1",6,,hepatocytegen
+ALB,"HSA, PRO0883, PRO0903, PRO1341",6,,hepatocytegen
+AMBP,"A1M, EDC1, HCP, HI30, IATIL, ITI, ITIL, ITILC, UTI",6,,hepatocytegen
+TF,"HEL-S-71p, PRO1557, PRO2086QTL1, TF",6,,hepatocytegen
+ITIH1,"H1P, IATIH, IGHEP1, ITI-HC1, ITIH, SHAP",6,,hepatocytegen
+APOC3,APOCIII,6,,hepatocytegen
+FGA,Fib2,6,,hepatocytegen
+C3,"AHUS5, ARMD9, ASPa, C3b, CPAMD1, HEL-S-62p, C3",6,,hepatocytegen
+APOA1,apo(a),6,,hepatocytegen
+C1S,EDSPD2,6,,hepatocytegen
+A1BG,"A1B, ABG, GAB, HYST2477",6,,hepatocytegen
+XIST,"DXS1089, DXS399E, LINC00001, NCRNA00001, SXI1, swd66",6,,hepatocytegen
+NEAT1,"LINC00084, NCRNA00084, TncRNA, VINC",6,,hepatocytegen
+HPX,HX,6,,hepatocytegen
+FGB,HEL-S-78p,6,,hepatocytegen
+ALDH1L1,"10-FTHFDH, 10-fTHF, FDH, FTHFD",6,,hepatocytegen
+PLG,,6,,hepatocytegen
+APOB,"FLDB, LDLCQ4, apoB-100, apoB-48",6,,hepatocytegen
+VTN,"V75, VN, VNT",6,,hepatocytegen
+F12,"HAE3, HAEX, HAF",6,,hepatocytegen
+IGLC2,IGLC,7,,plasmacell
+IGHG1,,7,,plasmacell
+IGKC,"HCAK1D, Km, IGKC",7,,plasmacell
+JCHAIN,"IGCJ, IGJ, JCH",7,,plasmacell
+IGHA1,IgA1,7,,plasmacell
+IGHM,"AGM1, MU, VH",7,,plasmacell
+MZB1,"MEDA-7, PACAP, pERp1",7,,plasmacell
+SSR4,"CDG1Y, TRAPD",7,,plasmacell
+DERL3,"C22orf14, IZP6, LLN2, derlin-3",7,,plasmacell
+POU2AF1,"BOB1, OBF-1, OBF1, OCAB",7,,plasmacell
+TNFRSF17,"BCM, BCMA, CD269, TNFRSF13A",7,,plasmacell
+ITM2C,"BRI3, BRICD2C, E25, E25C, ITM3",7,,plasmacell
+FKBP11,FKBP19,7,,plasmacell
+SUB1,"P15, PC4, p14",7,,plasmacell
+CPNE5,"COPN5, CPN5",7,,plasmacell
+ISG20,"CD25, HEM45",7,,plasmacell
+IGHG3,IgG3,7,,plasmacell
+SEC11C,"SEC11L3, SPC21, SPCS4C",7,,plasmacell
+PIM2,,7,,plasmacell
+HSP90B1,"ECGP, GP96, GRP94, HEL-S-125m, HEL35, TRA1",7,,plasmacell
+CD7,"GP40, LEU-9, TP41, Tp40",8,,nklike
+CMC1,C3orf68,8,,nklike
+XCL2,"SCM-1b, SCM1B, SCYC2",8,,nklike
+KLRB1,"CD161, CLEC5B, NKR, NKR-P1, NKR-P1A, NKRP1A, hNKR-P1A",8,,nklike
+KLRC1,"CD159A, NKG2, NKG2A",8,,nklike
+KLRF1,"CLEC5C, NKp80",8,,nklike
+KLRD1,CD94,8,,nklike
+NKG7,"GIG1, GMP-17, p15-TIA-1",8,,nklike
+IL2RB,"CD122, IL15RB, P70-75",8,,nklike
+CD160,"BY55, NK1, NK28",8,,nklike
+XCL1,"ATAC, LPTN, LTN, SCM-1, SCM-1a, SCM1, SCM1A, SCYC1",8,,nklike
+GZMK,TRYP2,8,,nklike
+TXK,"BTKL, PSCTK5, PTK4, RLK, TKL",8,,nklike
+FCER1G,FCRG,8,,nklike
+GZMA,"CTLA3, HFSP",8,,nklike
+CCL4,"ACT2, AT744.1, G-26, HC21, LAG-1, LAG1, MIP-1-beta, MIP1B, MIP1B1, SCYA2, SCYA4",8,,nklike
+HCST,"DAP10, KAP10, PIK3AP",8,,nklike
+CD247,"CD3-ZETA, CD3H, CD3Q, CD3Z, IMD25, T3Z, TCRZ",8,,nklike
+CCL3,"G0S19-1, LD78ALPHA, MIP-1-alpha, MIP1A, SCYA3",8,,nklike
+TMIGD2,"CD28H, IGPR-1, IGPR1",8,,nklike
+GNLY,"D2S69E, LAG-2, LAG2, NKG5, TLA519",9,,tcell
+GZMB,"C11, CCPI, CGL-1, CGL1, CSP-B, CSPB, CTLA1, CTSGL1, HLP, SECT",9,,tcell
+FGFBP2,"HBP17RP, KSP37",9,,tcell
+NKG7,"GIG1, GMP-17, p15-TIA-1",9,,tcell
+PRF1,"HPLH2, P1, PFP",9,,tcell
+KLRD1,CD94,9,,tcell
+HOPX,"CAMEO, HOD, HOP, LAGY, NECC1, OB1, SMAP31, TOTO",9,,tcell
+CST7,CMAP,9,,tcell
+CCL5,"D17S136E, RANTES, SCYA5, SIS-delta, SISd, TCP228, eoCP",9,,tcell
+GZMA,"CTLA3, HFSP",9,,tcell
+GZMH,"CCP-X, CGL-2, CSP-C, CTLA1, CTSGL2",9,,tcell
+CTSW,LYPN,9,,tcell
+HCST,"DAP10, KAP10, PIK3AP",9,,tcell
+KLRF1,"CLEC5C, NKp80",9,,tcell
+TMSB4X,"FX, PTMB4, TB4X, TMSB4",9,,tcell
+CD247,"CD3-ZETA, CD3H, CD3Q, CD3Z, IMD25, T3Z, TCRZ",9,,tcell
+HLA-C,"D6S204, HLA-JY3, HLAC, HLC-C, MHC, PSORS1",9,,tcell
+SPON2,"DIL-1, DIL1, M-SPONDIN, MINDIN",9,,tcell
+CD7,"GP40, LEU-9, TP41, Tp40",9,,tcell
+CCL4,"ACT2, AT744.1, G-26, HC21, LAG-1, LAG1, MIP-1-beta, MIP1B, MIP1B1, SCYA2, SCYA4",9,,tcell
+CD5L,"AIM, API6, CT-2, PRO229, SP-ALPHA, Spalpha, hAIM",10,,cd68macrophage
+MARCO,"SCARA2, SR-A6",10,,cd68macrophage
+CD163,"M130, MM130, SCARI1",10,,cd68macrophage
+CTSB,"APPS, CPSB",10,,cd68macrophage
+MS4A7,"4SPAN2, CD20L4, CFFM4, MS4A8",10,,cd68macrophage
+VCAM1,"CD106, INCAM-100",10,,cd68macrophage
+C1QA,,10,,cd68macrophage
+C1QB,,10,,cd68macrophage
+SLC40A1,"FPN1, HFE4, IREG1, MST079, MSTP079, MTP1, SLC11A3",10,,cd68macrophage
+C1QC,"C1Q-C, C1QG",10,,cd68macrophage
+HMOX1,"HMOX1D, HO-1, HSP32, bK286B10",10,,cd68macrophage
+MS4A6A,"4SPAN3, 4SPAN3.2, CD20L3, CDA01, MS4A6, MST090, MSTP090",10,,cd68macrophage
+HLA-DRA,HLA-DRA1,10,,cd68macrophage
+AIF1,"AIF-1, IBA1, IRT-1, IRT1",10,,cd68macrophage
+FCGR3A,"CD16, CD16A, FCG3, FCGR3, FCGRIII, FCR-10, FCRIII, FCRIIIA, IGFR3, IMD20",10,,cd68macrophage
+MSR1,"CD204, SCARA1, SR-A, SR-AI, SR-AII, SR-AIII, SRA, phSR1, phSR2",10,,cd68macrophage
+LIPA,"CESD, LAL",10,,cd68macrophage
+FOLR2,"BETA-HFR, FBP, FBP/PL-1, FR-BETA, FR-P3",10,,cd68macrophage
+AXL,"ARK, JTK11, Tyro7, UFO",10,,cd68macrophage
+CTSS,,10,,cd68macrophage
+MGP,"GIG36, MGLAP, NTI",11,,periportalEC
+SPARCL1,"MAST 9, MAST9, PIG33, SC1",11,,periportalEC
+CLEC14A,"C14orf27, CEG1, EGFR-5",11,,periportalEC
+TM4SF1,"H-L6, L6, M3S1, TAAL6",11,,periportalEC
+IGFBP7,"AGM, FSTL2, IBP-7, IGFBP-7, IGFBP-7v, IGFBPRP1, MAC25, PSF, RAMSVPS, TAF",11,,periportalEC
+ID1,"ID, bHLHb24",11,,periportalEC
+VWF,"F8VWF, VWD",11,,periportalEC
+ID3,"HEIR-1, bHLHb25",11,,periportalEC
+AQP1,"AQP-CHIP, CHIP28, CO",11,,periportalEC
+ADIRF,"AFRO, APM2, C10orf116, apM-2",11,,periportalEC
+CD9,"BTCC-1, DRAP-27, MIC3, MRP-1, TSPAN-29, TSPAN29",11,,periportalEC
+GNG11,GNGT11,11,,periportalEC
+SLCO2A1,"MATR1, OATP2A1, PGT, PHOAR2, SLC21A2",11,,periportalEC
+C7,,11,,periportalEC
+CAV1,"BSCL3, CGL3, LCCNS, MSTP085, PPH3, VIP21",11,,periportalEC
+IL33,"C9orf26, DVS27, IL1F11, NF-HEV, NFEHEV",11,,periportalEC
+HSPG2,"HSPG, PLC, PRCAN, SJA, SJS, SJS1",11,,periportalEC
+SRPX,"DRS, ETX1, HEL-S-83p1, SRPX",11,,periportalEC
+CLDN5,"AWAL, BEC1, CPETRL1, TMVCF",11,,periportalEC
+PTRF,"CAVIN1, CAVIN, CGL4, FKSG13, cavin-1",11,,periportalEC
+CLEC1B,"1810061I13Rik, CLEC2, CLEC2B, PRO1384, QDED721",12,,centralvenousEC
+FCN2,"EBP-37, FCNL, P35, ficolin-2",12,,centralvenousEC
+FCN3,"FCNH, HAKA1",12,,centralvenousEC
+CRHBP,"CRF-BP, CRFBP",12,,centralvenousEC
+CLEC4G,"DTTR431, LP2698, LSECtin, UNQ431",12,,centralvenousEC
+DNASE1L3,"DHP2, DNAS1L3, LSD, SLEB16",12,,centralvenousEC
+OIT3,LZP,12,,centralvenousEC
+CCL14,"CC-1, CC-3, CKB1, HCC-1, HCC-1(1-74), HCC-1/HCC-3, HCC-3, MCIF, NCC-2, NCC2, SCYA14, SCYL2, SY14",12,,centralvenousEC
+STAB1,"CLEVER-1, FEEL-1, FELE-1, FEX1, SCARH2, STAB-1",12,,centralvenousEC
+CLEC4M,"CD209L, CD299, DC-SIGN2, DC-SIGNR, DCSIGNR, HP10347, L-SIGN, LSIGN",12,,centralvenousEC
+FCGR2B,"CD32, CD32B, FCG2, FCGR2, IGFR2",12,,centralvenousEC
+CLDN5,"AWAL, BEC1, CPETRL1, TMVCF",12,,centralvenousEC
+SPARC,"BM-40, OI17, ON",12,,centralvenousEC
+GNG11,GNGT11,12,,centralvenousEC
+LIFR,"CD118, LIF-R, SJS2, STWS, SWS",12,,centralvenousEC
+ADGRL4,"ELTD1, ETL, KPG_003",12,,centralvenousEC
+MEG3,"FP504, GTL2, LINC00023, NCRNA00023, PRO0518, PRO2160, onco-lncRNA-83, prebp1",12,,centralvenousEC
+STAB2,"FEEL2, FELE-2, FELL2, FEX2, HARE, SCARH1",12,,centralvenousEC
+RAMP3,,12,,centralvenousEC
+NTN4,PRO3091,12,,liverendothelial
+PRSS23,"SIG13, SPUVE, ZSIG13",13,,liverendothelial
+INMT,TEMT,13,,liverendothelial
+TAGLN,"SM22, SM22-alpha, SMCC1, WS3-10, TAGLN",13,,liverendothelial
+RAMP3,,13,,liverendothelial
+RSPO3,"CRISTIN1, PWTSR, THSD2",13,,liverendothelial
+SRPX,"DRS, ETX1, HEL-S-83p1, SRPX",13,,liverendothelial
+C7,,13,,liverendothelial
+LIFR,"CD118, LIF-R, SJS2, STWS, SWS",13,,liverendothelial
+PTPRB,"HPTP-BETA, HPTPB, PTPB, R-PTP-BETA, VEPTP",13,,liverendothelial
+ENG,"END, HHT1, ORW1",13,,liverendothelial
+RNASE1,"RAC1, RIB1, RNS1",13,,liverendothelial
+PTGDS,"L-PGDS, LPGDS, PDS, PGD2, PGDS, PGDS2",13,,liverendothelial
+DNASE1L3,"DHP2, DNAS1L3, LSD, SLEB16",13,,liverendothelial
+TIMP3,"HSMRK222, K222, K222TA2, SFD",13,,liverendothelial
+VWF,"F8VWF, VWD",13,,liverendothelial
+HSPG2,"HSPG, PLC, PRCAN, SJA, SJS, SJS1",13,,liverendothelial
+ID3,"Hlh462, Idb3, bHLHb25",13,,liverendothelial
+IGFBP7,"AGM, FSTL2, IBP-7, IGFBP-7, IGFBP-7v, IGFBPRP1, MAC25, PSF, RAMSVPS, TAF",13,,liverendothelial
+LYPD2,"LYPDC2, UNQ430",13,,liverendothelial
+LTC4S,,13,,liverendothelial
+CYP2A7,"CPA7, CPAD, CYP2A, CYPIIA7, P450-IIA4",14,,periportalEC
+CFHR1,"CFHL, CFHL1, CFHL1PP, FHR1, H36-1, H36-2, HFL1, HFL2, CFHR1",14,,periportalEC
+CFHR3,"CFHL3, DOWN16, FHR-3, FHR3, HLF4",14,,periportalEC
+CYP2A6,"CPA6, CYP2A, CYP2A3, CYPIIA6, P450C2A, P450PB",14,,periportalEC
+SAA2,,14,,periportalEC
+A2M,"A2MD, CPAMD5, FWP007, S863-7",14,,periportalEC
+CYP2B6,"CPB6, CYP2B, CYP2B7, CYP2B7P, CYPIIB6, EFVM, IIB1, P450",14,,periportalEC
+SERPINA1,"A1A, A1AT, AAT, PI, PI1, PRO2275, alpha1AT, nNIF",14,,periportalEC
+CFHR4,"CFHL4, FHR-4, FHR4",14,,periportalEC
+CRP,PTX1,14,,periportalEC
+IGFBP2,"IBP2, IGF-BP53",14,,periportalEC
+FGA,Fib2,14,,periportalEC
+ITIH4,"GP120, H4P, IHRP, ITI-HC4, ITIHL1, PK-120, PK120",14,,periportalEC
+FGB,HEL-S-78p,14,,periportalEC
+CFB,"AHUS4, ARMD14, BF, BFD, CFABD, FB, FBI12, GBG, H2-Bf, PBF2, CFB",14,,periportalEC
+LPA,"AK38, APOA, LP",14,,periportalEC
+MST1,"D3F15S2, DNF15S2, HGFL, MSP, NF15S2",14,,periportalEC
+C3,"AHUS5, ARMD9, ASPa, C3b, CPAMD1, HEL-S-62p, C3",14,,periportalEC
+FGL1,"HFREP1, HP-041, LFIRE-1, LFIRE1",14,,periportalEC
+HP,"BP2ALPHA2, HPA1S, HP",14,,periportalEC
+HPD,"4-HPPD, 4HPPD, GLOD3, HPPDASE, PPD",15,,interzonalhepatocyte
+GSTA1,"GST-epsilon, GST2-1, GTH1, GSTA1",15,,interzonalhepatocyte
+DBI,"ACBD1, ACBP, CCK-RP, EP",15,,interzonalhepatocyte
+PTGR1,"LTB4DH, PGR1, ZADH3",15,,interzonalhepatocyte
+GNMT,HEL-S-182mP,15,,interzonalhepatocyte
+HINT1,"HINT, NMAN, PKCI-1, PRKCNH1",15,,interzonalhepatocyte
+ANGPTL3,"ANG-5, ANGPT5, ANL3, FHBL2",15,,interzonalhepatocyte
+PRDX6,"1-Cys, AOP2, HEL-S-128m, NSGPx, PRX, aiPLA2, p29",15,,interzonalhepatocyte
+ADH1C,ADH3,15,,interzonalhepatocyte
+HSPE1,"CPN10, EPF, GROES, HSP10",15,,interzonalhepatocyte
+CYB5A,"CYB5, MCB5",15,,interzonalhepatocyte
+EDF1,"CFAP280, EDF-1, MBF1",15,,interzonalhepatocyte
+SOD1,"ALS, ALS1, HEL-S-44, IPOA, SOD, hSod1, homodimer",15,,interzonalhepatocyte
+PEBP1,"HCNP, HCNPpp, HEL-210, HEL-S-34, HEL-S-96, PBP, PEBP, PEBP-1, RKIP",15,,interzonalhepatocyte
+ADI1,"APL1, ARD, Fe-ARD, HMFT1638, MTCBP1, Ni-ARD, SIPL, mtnD",15,,interzonalhepatocyte
+NDUFA4,"CI-9k, CI-MLRQ, MLRQ",15,,interzonalhepatocyte
+HULC,"HCCAT1, LINC00078, NCRNA00078",15,,interzonalhepatocyte
+GPX4,"GPx-4, GSHPx-4, MCSP, PHGPx, SMDS, snGPx, snPHGPx",15,,interzonalhepatocyte
+GAPDH,"G3PD, GAPD, HEL-S-162eP",15,,interzonalhepatocyte
+RPL36AL,RPL36A,15,,interzonalhepatocyte
+MS4A1,"B1, Bp35, CD20, CVID5, LEU-16, MS4A2, S7",16,,maturebcell
+CD79B,"AGM6, B29, IGB",16,,maturebcell
+CD37,"GP52-40, TSPAN26",16,,maturebcell
+CD74,"DHLAG, HLADG, II, Ia-GAMMA",16,,maturebcell
+HLA-DRA,HLA-DRA1,16,,maturebcell
+CD52,"CDW52, EDDM5",16,,maturebcell
+IGHD,,16,,maturebcell
+LTB,"TNFC, TNFSF3, TNLG1C, p33",16,,maturebcell
+LINC00926,,16,,maturebcell
+HLA-DQB1,"CELIAC1, HLA-DQB, IDDM1",16,,maturebcell
+VPREB3,"8HS20, N27C7-2",16,,maturebcell
+TNFRSF13C,"BAFF-R, BAFFR, BROMIX, CD268, CVID4, prolixin",16,,maturebcell
+BANK1,BANK,16,,maturebcell
+HLA-DPA1,"DP(W3), DP(W4), HLA-DP1A, HLADP, HLASB, PLT1",16,,maturebcell
+BIRC3,"AIP1, API2, CIAP2, HAIP1, HIAP1, MALT2, MIHC, RNF49, c-IAP2",16,,maturebcell
+HLA-DQA1,"CELIAC1, DQ-A1, HLA-DQA",16,,maturebcell
+HLA-DPB1,"DPB1, HLA-DP, HLA-DP1B, HLA-DPB",16,,maturebcell
+TCL1A,TCL1,16,,maturebcell
+CD22,"SIGLEC-2, SIGLEC2",16,,maturebcell
+RPL18A,L18A,16,,maturebcell
+FXYD2,"ATP1G1, HOMG2",17,,cholangiocyte
+KRT7,"CK7, K2C7, K7, SCL",17,,cholangiocyte
+SPP1,"BNSP, BSPI, ETA-1, OPN",17,,cholangiocyte
+TACSTD2,"EGP-1, EGP1, GA733-1, GA7331, GP50, M1S1, TROP2",17,,cholangiocyte
+CD24,CD24A,17,,cholangiocyte
+CLDN10,"CPETRL3, HELIX, OSP-L, OSPL",17,,cholangiocyte
+KRT19,"CK19, K19, K1CS",17,,cholangiocyte
+PLPP2,"LPP2, PAP-2c, PAP2-g, PPAP2C",17,,cholangiocyte
+CHST4,"GST3, GlcNAc6ST2, HECGLCNAC6ST, LSST",17,,cholangiocyte
+CLDN4,"CPE-R, CPER, CPETR, CPETR1, WBSCR8, hCPE-R",17,,cholangiocyte
+EPCAM,"DIAR5, EGP-2, EGP314, EGP40, ESA, HNPCC8, KS1/4, KSA, M4S1, MIC18, MK-1, TACSTD1, TROP1",17,,cholangiocyte
+LGALS4,"GAL4, L36LBP",17,,cholangiocyte
+S100A14,"BCMP84, S100A15",17,,cholangiocyte
+SOX9,"CMD1, CMPD1, SRA1, SRXX2, SRXY10",17,,cholangiocyte
+SLC5A1,"D22S675, NAGT, SGLT1",17,,cholangiocyte
+CXCL6,"CKA-3, GCP-2, GCP2, SCYB6",17,,cholangiocyte
+SFRP5,SARP3,17,,cholangiocyte
+ELF3,"EPR-1, ERT, ESE-1, ESX",17,,cholangiocyte
+FGFR2,"BBDS, BEK, BFR-1, CD332, CEK3, CFD1, ECT1, JWS, K-SAM, KGFR, TK14, TK25",17,,cholangiocyte
+BICC1,"BICC, CYSRD",17,,cholangiocyte
+STMN1,"C1orf215, LAP18, Lag, OP18, PP17, PP19, PR22, SMN",18,,tcell
+TOP2A,"TOP2, TP2A",18,,tcell
+MKI67,"KIA, MIB-, MIB-1, PPP1R105",18,,tcell
+UBE2C,"UBCH10, dJ447F3.2",18,,tcell
+BIRC5,"API4, EPR-1",18,,tcell
+HMGB2,HMG2,18,,tcell
+KIAA0101,"PCLAF, L5, NS5ATP9, OEATC, OEATC-1, OEATC1, PAF, PAF15, p15(PAF), p15/PAF, p15PAF",18,,tcell
+AURKB,"AIK2, AIM-1, AIM1, ARK-2, ARK2, AurB, IPL1, PPP1R48, STK-1, STK12, STK5, aurkb-sv1, aurkb-sv2",18,,tcell
+NUSAP1,"ANKT, BM037, LNP, NUSAP, PRO0310p1, Q0310, SAPL",18,,tcell
+TYMS,"HST422, TMS, TS",18,,tcell
+CENPM,"C22orf18, CENP-M, PANE1",18,,tcell
+TPX2,"C20orf1, C20orf2, DIL-2, DIL2, FLS353, GD:C20orf1, HCA519, HCTP4, REPP86, p100",18,,tcell
+CENPF,"CENF, CILD31, PRO1779, STROMS, hcp-1",18,,tcell
+TUBA1B,K-ALPHA-1,18,,tcell
+RACGAP1,"CYK4, HsCYK-4, ID-GAP, MgcRacGAP",18,,tcell
+CENPA,"CENP-A, CenH3",18,,tcell
+ASPM,"ASP, Calmbp1, MCPH5",18,,tcell
+GTSE1,B99,18,,tcell
+CDT1,"DUP, RIS2",18,,tcell
+CDK1,"CDC2, CDC28A, P34CDC2",18,,tcell
+HBA1,"HBA-T3, HBH",19,,erythrocyte
+HBA2,"HBA-T2, HBH",19,,erythrocyte
+HBB,"CD113t-C, beta-globin",19,,erythrocyte
+SLC25A37,"HT015, MFRN, MFRN1, MSC, MSCP, PRO1278, PRO1584, PRO2217",19,,erythrocyte
+GLRX5,"C14orf87, FLB4739, GRX5, PR01238, PRO1238, PRSA, SIDBA3, SPAHGC",19,,erythrocyte
+FKBP8,"FKBP38, FKBPr38",19,,erythrocyte
+SLC25A39,"CGI-69, CGI69",19,,erythrocyte
+BLVRB,"BVRB, FLR, HEL-S-10, SDR43U1",19,,erythrocyte
+GUK1,GMK,19,,erythrocyte
+BSG,"5F7, CD147, EMMPRIN, OK, TCSF",19,,erythrocyte
+UBB,HEL-S-50,19,,erythrocyte
+GYPC,"CD236, CD236R, GE, GE:GPC:GPD:GYPD, GPC, GPD, GYPD, PAS-2, PAS-2'",19,,erythrocyte
+YBX3,"CSDA, CSDA1, DBPA, ZONAB",19,,erythrocyte
+BNIP3L,"BNIP3a, NIX",19,,erythrocyte
+PRDX2,"HEL-S-2a, NKEF-B, NKEFB, PRP, PRX2, PRXII, PTX1, TDPX1, TPX1, TSA",19,,erythrocyte
+GABARAPL2,"ATG8, ATG8C, GATE-16, GATE16, GEF-2, GEF2",19,,erythrocyte
+RAD23A,"HHR23A, HR23A",19,,erythrocyte
+FBXO7,"FBX, FBX07, FBX7, PARK15, PKPS",19,,erythrocyte
+CA2,"CA-II, CAC, CAII, Car2, HEL-76, HEL-S-282",19,,erythrocyte
+HBD,,19,,erythrocyte
+ACTA2,ACTSA,20,,hepaticstellate
+DCN,"CSCD, DSPG2, PG40, PGII, PGS2, SLRR1B",20,,hepaticstellate
+MYL9,"LC20, MLC-2C, MLC2, MRLC1, MYRL2",20,,hepaticstellate
+COL3A1,"EDS4A, EDSVASC",20,,hepaticstellate
+COL1A2,"EDSARTH2, EDSCV, OI4",20,,hepaticstellate
+COL1A1,"EDSARTH1, EDSC, OI1, OI2, OI3, OI4",20,,hepaticstellate
+OLFML3,"HNOEL-iso, OLF44",20,,hepaticstellate
+TAGLN,"SM22, SM22-alpha, SMCC1, WS3-10, TAGLN",20,,hepaticstellate
+BGN,"DSPG1, MRLS, PG-S1, PGI, SEMDX, SLRR1A",20,,hepaticstellate
+TPM2,"AMCD1, DA1, DA2B, HEL-S-273, NEM4, TMSB",20,,hepaticstellate
+COLEC11,"3MC2, CL-K1-I, CL-K1-II, CL-K1-IIa, CL-K1-IIb, CLK1",20,,hepaticstellate
+LUM,"LDC, SLRR2D",20,,hepaticstellate
+NEXN,"CMH20, NELIN",20,,hepaticstellate
+COL14A1,UND,20,,hepaticstellate
+GGT5,"GGL, GGT 5, GGT-REL, GGTLA1",20,,hepaticstellate
+IGFBP7,"AGM, FSTL2, IBP-7, IGFBP-7, IGFBP-7v, IGFBPRP1, MAC25, PSF, RAMSVPS, TAF",20,,hepaticstellate
+ASPN,"OS3, PLAP-1, PLAP1, SLRR1C",20,,hepaticstellate
+COL6A2,"BTHLM1, PP3610, UCMD1",20,,hepaticstellate
+COL4A2,"ICH, POREN2",20,,hepaticstellate
+THBS2,TSP2,20,,hepaticstellate
+RPS26,"DBA10, S26",t1,,tcell
+MT1G,"MT1, MT1K",t1,,tcell
+HBB,"CD113t-C, beta-globin",t1,,tcell
+IL32,"IL-32alpha, IL-32beta, IL-32delta, IL-32gamma, NK4, TAIF, TAIFa, TAIFb, TAIFc, TAIFd",t1,,tcell
+SAA2,,t1,,tcell
+JUN,"AP-1, AP1, c-Jun, p39",t1,,tcell
+MT1X,"MT-1l, MT1",t1,,tcell
+APOC1,"Apo-CI, ApoC-I, apo-CIB, apoC-IB",t1,,tcell
+CD3D,"CD3-DELTA, IMD19, T3D",t1,,tcell
+MT2A,"MT-2, MT-II, MT2",t1,,tcell
+SERPINA1,"A1A, A1AT, AAT, PI, PI1, PRO2275, alpha1AT, nNIF",t1,,tcell
+AC090498.1,,t1,,tcell
+APOC3,APOCIII,t1,,tcell
+JUNB,AP-1,t1,,tcell
+SOD1,"ALS, ALS1, HEL-S-44, IPOA, SOD, hSod1, homodimer",t1,,tcell
+MT1E,"MT-1E, MT-IE, MT1, MTD",t1,,tcell
+DCXR,"DCR, HCR2, HCRII, KIDCR, P34H, PNTSU, SDR20C1, XR",t1,,tcell
+MT1H,"MT-0, MT-1H, MT-IH, MT1",t1,,tcell
+PSMD5-AS1,CUTALP,t1,,tcell
+FOSB,"AP-1, G0S3, GOS3, GOSB",t1,,tcell
+RPS26,"DBA10, S26",t2,,tcell
+MT1G,"MT1, MT1K",t2,,tcell
+HBB,"CD113t-C, beta-globin",t2,,tcell
+IL32,"IL-32alpha, IL-32beta, IL-32delta, IL-32gamma, NK4, TAIF, TAIFa, TAIFb, TAIFc, TAIFd",t2,,tcell
+SAA2,,t2,,tcell
+JUN,"AP-1, AP1, c-Jun, p39",t2,,tcell
+MT1X,"MT-1l, MT1",t2,,tcell
+APOC1,"Apo-CI, ApoC-I, apo-CIB, apoC-IB",t2,,tcell
+CD3D,"CD3-DELTA, IMD19, T3D",t2,,tcell
+MT2A,"MT-2, MT-II, MT2",t2,,tcell
+SERPINA1,"A1A, A1AT, AAT, PI, PI1, PRO2275, alpha1AT, nNIF",t2,,tcell
+AC090498.1,,t2,,tcell
+APOC3,APOCIII,t2,,tcell
+JUNB,AP-1,t2,,tcell
+SOD1,"ALS, ALS1, HEL-S-44, IPOA, SOD, hSod1, homodimer",t2,,tcell
+MT1E,"MT-1E, MT-IE, MT1, MTD",t2,,tcell
+DCXR,"DCR, HCR2, HCRII, KIDCR, P34H, PNTSU, SDR20C1, XR",t2,,tcell
+MT1H,"MT-0, MT-1H, MT-IH, MT1",t2,,tcell
+PSMD5-AS1,CUTALP,t2,,tcell
+FOSB,"AP-1, G0S3, GOS3, GOSB",t2,,tcell
+CD3D,"CD3-DELTA, IMD19, T3D",t3,,tcell
+HLA-DRB5,,t3,,tcell
+TRAC,"IMD7, TCRA, TRA, TRCA",t3,,tcell
+CD3E,"IMD18, T3E, TCRE",t3,,tcell
+HLA-DRB1,"DRB1, HLA-DR1B, HLA-DRB, SS1",t3,,tcell
+FCN3,"FCNH, HAKA1",t3,,tcell
+CD8A,"CD8, Leu2, MAL, p32",t3,,tcell
+NBEAL1,"A530083I02Rik, ALS2CR16, ALS2CR17",t3,,tcell
+CD8B,"CD8B1, LEU2, LY3, LYT3, P37",t3,,tcell
+AC090498.1,,t3,,tcell
+TRGC2,"TCRGC2(2X), TRGC2(3X), TRGC2",t3,,tcell
+HLA-DPB1,"DPB1, HLA-DP, HLA-DP1B, HLA-DPB",t3,,tcell
+HLA-DQA2,"DX-ALPHA, HLA-DXA, HLADQA2",t3,,tcell
+TXNIP,"ARRDC6, EST01027, HHCPA78, THIF, VDUP1",t3,,tcell
+CRHBP,"CRF-BP, CRFBP",t3,,tcell
+CD3G,"CD3-GAMMA, IMD17, T3G",t3,,tcell
+MAF,"AYGRP, CCA4, CTRCT21, c-MAF",t3,,tcell
+CCL14,"CC-1, CC-3, CKB1, HCC-1, HCC-1(1-74), HCC-1/HCC-3, HCC-3, MCIF, NCC-2, NCC2, SCYA14, SCYL2, SY14",t3,,tcell
+IFNGR1,"CD119, IFNGR, IMD27A, IMD27B",t3,,tcell
+FCN2,"EBP-37, FCNL, P35, ficolin-2",t3,,tcell
+FCER1G,FCRG,t4,,nkcell
+XCL1,"ATAC, LPTN, LTN, SCM-1, SCM-1a, SCM1, SCM1A, SCYC1",t4,,nkcell
+KLRF1,"CLEC5C, NKp80",t4,,nkcell
+TYROBP,"DAP12, KARAP, PLOSL",t4,,nkcell
+KLRC1,"CD159A, NKG2, NKG2A",t4,,nkcell
+FOS,"AP-1, C-FOS, p55",t4,,nkcell
+CMC1,C3orf68,t4,,nkcell
+AREG,"ARB, CRDGF, SDGF, AREG",t4,,nkcell
+CD7,"GP40, LEU-9, TP41, Tp40",t4,,nkcell
+MT1G,"MT1, MT1K",t4,,nkcell
+KLRD1,CD94,t4,,nkcell
+CEBPD,"C/EBP-delta, CELF, CRP3, NF-IL6-beta",t4,,nkcell
+XCL2,"SCM-1b, SCM1B, SCYC2",t4,,nkcell
+CCL3,"G0S19-1, LD78ALPHA, MIP-1-alpha, MIP1A, SCYA3",t4,,nkcell
+CD63,"LAMP-3, ME491, MLA1, OMA81H, TSPAN30",t4,,nkcell
+GZMK,TRYP2,t4,,nkcell
+CD160,"BY55, NK1, NK28",t4,,nkcell
+DUSP1,"CL100, HVH1, MKP-1, MKP1, PTPN10",t4,,nkcell
+TSC22D3,"DIP, DSIPI, GILZ, TSC-22R",t4,,nkcell
+HSP90AA1,"EL52, HEL-S-65p, HSP86, HSP89A, HSP90A, HSP90N, HSPC1, HSPCA, HSPCAL1, HSPCAL4, HSPN, Hsp103, Hsp89, Hsp90, LAP-2, LAP2",t4,,nkcell
+GNLY,"D2S69E, LAG-2, LAG2, NKG5, TLA519",t5,,plasma
+FGFBP2,"HBP17RP, KSP37",t5,,plasma
+PRF1,"HPLH2, P1, PFP",t5,,plasma
+GZMB,"C11, CCPI, CGL-1, CGL1, CSP-B, CSPB, CTLA1, CTSGL1, HLP, SECT",t5,,plasma
+PTGDS,"L-PGDS, LPGDS, PDS, PGD2, PGDS, PGDS2",t5,,plasma
+PLAC8,"C15, DGIC, PNAS-144, onzin",t5,,plasma
+FCGR3A,"CD16, CD16A, FCG3, FCGR3, FCGRIII, FCR-10, FCRIII, FCRIIIA, IGFR3, IMD20",t5,,plasma
+NKG7,"GIG1, GMP-17, p15-TIA-1",t5,,plasma
+SPON2,"DIL-1, DIL1, M-SPONDIN, MINDIN",t5,,plasma
+IGFBP7,"AGM, FSTL2, IBP-7, IGFBP-7, IGFBP-7v, IGFBPRP1, MAC25, PSF, RAMSVPS, TAF",t5,,plasma
+CYBA,p22-PHOX,t5,,plasma
+FCER1G,FCRG,t5,,plasma
+MT1G,"MT1, MT1K",t5,,plasma
+KLRF1,"CLEC5C, NKp80",t5,,plasma
+SAA2,,t5,,plasma
+KLF2,LKLF,t5,,plasma
+S100B,"NEF, S100, S100-B, S100beta",t5,,plasma
+HOPX,"CAMEO, HOD, HOP, LAGY, NECC1, OB1, SMAP31, TOTO",t5,,plasma
+TYROBP,"DAP12, KARAP, PLOSL",t5,,plasma
+PRSS23,"SIG13, SPUVE, ZSIG13",t5,,plasma
+TYROBP,"DAP12, KARAP, PLOSL",t6,,nkcell
+CMC1,C3orf68,t6,,nkcell
+IL2RB,"CD122, IL15RB, P70-75",t6,,nkcell
+XCL2,"SCM-1b, SCM1B, SCYC2",t6,,nkcell
+KLRB1,"CD161, CLEC5B, NKR, NKR-P1, NKR-P1A, NKRP1A, hNKR-P1A",t6,,nkcell
+KLRC1,"CD159A, NKG2, NKG2A",t6,,nkcell
+NKG7,"GIG1, GMP-17, p15-TIA-1",t6,,nkcell
+CD7,"GP40, LEU-9, TP41, Tp40",t6,,nkcell
+TRDC,TCRD,t6,,nkcell
+FCER1G,FCRG,t6,,nkcell
+GNB2L1,"RACK1, Gnb2-rs1, H12.3, HLC-7, PIG21",t6,,nkcell
+RPS11,S11,t6,,nkcell
+RPSA,"37LRP, 67LR, ICAS, LAMBR, LAMR1, LBP, LBP/p40, LRP, LRP/LR, NEM/1CHD4, SA, lamR, p40",t6,,nkcell
+TXK,"BTKL, PSCTK5, PTK4, RLK, TKL",t6,,nkcell
+KLRF1,"CLEC5C, NKp80",t6,,nkcell
+GSTP1,"DFN7, FAEES3, GST3, GSTP, HEL-S-22, PI",t6,,nkcell
+CD160,"BY55, NK1, NK28",t6,,nkcell
+RPLP0,"L10E, LP0, P0, PRLP0, RPP0",t6,,nkcell
+SRGN,"PPG, PRG, PRG1",t6,,nkcell
+IFITM2,"1-8D, DSPA2c",t6,,nkcell
+GNLY,"D2S69E, LAG-2, LAG2, NKG5, TLA519",t7,,tcell
+GZMB,"C11, CCPI, CGL-1, CGL1, CSP-B, CSPB, CTLA1, CTSGL1, HLP, SECT",t7,,tcell
+MYOM2,TTNAP,t7,,tcell
+NKG7,"GIG1, GMP-17, p15-TIA-1",t7,,tcell
+FGFBP2,"HBP17RP, KSP37",t7,,tcell
+ADGRG1,"BFPP, BPPR, GPR56, TM7LN4, TM7XN1",t7,,tcell
+HOPX,"CAMEO, HOD, HOP, LAGY, NECC1, OB1, SMAP31, TOTO",t7,,tcell
+FCGR3A,"CD16, CD16A, FCG3, FCGR3, FCGRIII, FCR-10, FCRIII, FCRIIIA, IGFR3, IMD20",t7,,tcell
+CLIC3,,t7,,tcell
+SPON2,"DIL-1, DIL1, M-SPONDIN, MINDIN",t7,,tcell
+CEP78,"C9orf81, CRDHL, IP63",t7,,tcell
+TYROBP,"DAP12, KARAP, PLOSL",t7,,tcell
+TRDC,TCRD,t7,,tcell
+NEAT1,"LINC00084, NCRNA00084, TncRNA, VINC",t7,,tcell
+CX3CR1,"CCRL1, CMKBRL1, CMKDR1, GPR13, GPRV28, V28",t7,,tcell
+LAIR2,CD306,t7,,tcell
+FCER1G,FCRG,t7,,tcell
+PRF1,"HPLH2, P1, PFP",t7,,tcell
+KLRD1,CD94,t7,,tcell
+EFHD2,SWS1,t7,,tcell
+TUBB,"CDCBM6, CSCSC1, M40, OK/SW-cl.561, TUBB5, TUBB",t8,,tcell
+TUBA1B,K-ALPHA-1,t8,,tcell
+HMGB2,HMG2,t8,,tcell
+STMN1,"C1orf215, LAP18, Lag, OP18, PP17, PP19, PR22, SMN",t8,,tcell
+HIST1H4C,"H4/g, H4FG, dJ221C16.1",t8,,tcell
+TOP2A,"TOP2, TP2A",t8,,tcell
+H2AFZ,"H2A.Z-1, H2A.z, H2A/z, H2AZ",t8,,tcell
+UBE2C,"UBCH10, dJ447F3.2",t8,,tcell
+KIAA0101,"PCLAF, L5, NS5ATP9, OEATC, OEATC-1, OEATC1, PAF, PAF15, p15(PAF), p15/PAF, p15PAF",t8,,tcell
+MKI67,"KIA, MIB-, MIB-1, PPP1R105",t8,,tcell
+TYMS,"HST422, TMS, TS",t8,,tcell
+BIRC5,"API4, EPR-1",t8,,tcell
+HMGN2,HMG17,t8,,tcell
+AURKB,"AIK2, AIM-1, AIM1, ARK-2, ARK2, AurB, IPL1, PPP1R48, STK-1, STK12, STK5, aurkb-sv1, aurkb-sv2",t8,,tcell
+CKS1B,"CKS1, PNAS-16, PNAS-18, ckshs1",t8,,tcell
+NUSAP1,"ANKT, BM037, LNP, NUSAP, PRO0310p1, Q0310, SAPL",t8,,tcell
+ZWINT,"HZwint-1, KNTC2AP, SIP301, ZWINT",t8,,tcell
+CENPF,"CENF, CILD31, PRO1779, STROMS, hcp-1",t8,,tcell
+CENPA,"CENP-A, CenH3",t8,,tcell
+ASPM,"ASP, Calmbp1, MCPH5",t8,,tcell
+CMC1,C3orf68,t9,,nkcell
+TYROBP,"DAP12, KARAP, PLOSL",t9,,nkcell
+TRDC,TCRD,t9,,nkcell
+KLRF1,"CLEC5C, NKp80",t9,,nkcell
+FCER1G,FCRG,t9,,nkcell
+CD7,"GP40, LEU-9, TP41, Tp40",t9,,nkcell
+GSTP1,"DFN7, FAEES3, GST3, GSTP, HEL-S-22, PI",t9,,nkcell
+XCL1,"ATAC, LPTN, LTN, SCM-1, SCM-1a, SCM1, SCM1A, SCYC1",t9,,nkcell
+CD160,"BY55, NK1, NK28",t9,,nkcell
+SYNGR1,,t9,,nkcell
+FGR,"SRC2, c-fgr, c-src2, p55-Fgr, p55c-fgr, p58-Fgr, p58c-fgr",t9,,nkcell
+IL2RB,"CD122, IL15RB, P70-75",t9,,nkcell
+IFITM1,"9-27, CD225, DSPA2a, IFI17, LEU13",t9,,nkcell
+TMIGD2,"CD28H, IGPR-1, IGPR1",t9,,nkcell
+TXK,"BTKL, PSCTK5, PTK4, RLK, TKL",t9,,nkcell
+XCL2,"SCM-1b, SCM1B, SCYC2",t9,,nkcell
+KLRD1,CD94,t9,,nkcell
+CLIC3,,t9,,nkcell
+SRGN,"PPG, PRG, PRG1",t9,,nkcell
+SYK,p72-Syk,t9,,nkcell
