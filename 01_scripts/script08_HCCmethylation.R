@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------------#
-# Project: Hepatocyte-related gene identification
-# Purpose: Identify hepatocyte=specific genes from literature in BG output for Stage 1
+# Project: HCC-methylated gene identification
+# Purpose: Identify HCC-methylated genes in differential expression data for Stage 1
 # Author: Artemio Sison III
 # R Version: 4.0.1 "Holding the Windsock"
 #-------------------------------------------------------------------------------------#
@@ -270,7 +270,32 @@ lapply(race.all, function(x) filter(x, gene_name %in% methylation_add.gene)) -> 
 # retain and write to csv
 names(methylation.all) <- races[1:3]
 lapply(1:length(methylation.all), function(i) write.csv(methylation.all[[i]],
-                                                        file = paste0("./02_output/06_SChepatocyteOutput/", names(methylation.all[i]), "_HCCmethylation_retained_stage1.csv"), row.names = FALSE))
+                                                        file = paste0("./02_output/07_HCCmethylationOutput/", names(methylation.all[i]), "_HCCmethylation_retained_stage1.csv"), row.names = FALSE))
 
-
+# use join function to perform overlapping for all races
 joinfunction(methylation.all) -> HCCmeth.all
+
+# write to csv
+write.csv(HCCmeth.all, paste0("./02_output/07_HCCmethylationOutput/allrace_HCCmethylation_retained_stage1.csv"))
+
+#-------------------------------------------------------------------------------------#
+# Section: Identify hepatocyte-specific genes associated with HCC methylation
+# + read in hepatocyte-specific data
+# + match genes in methylation with hepatocyte-specific genes
+# NOTE no genes identified in hepatocyte and methylation overlapping
+#-------------------------------------------------------------------------------------#
+
+hep.asian <- read.csv("./02_output/06_SChepatocyteOutput/asian_SChepatocyte_retained_stage1.csv")
+hep.black <- read.csv("./02_output/06_SChepatocyteOutput/black_SChepatocyte_retained_stage1.csv")
+hep.white <- read.csv("./02_output/06_SChepatocyteOutput/white_SChepatocyte_retained_stage1.csv")
+
+hep.all <- list(hep.asian, hep.black, hep.white)
+
+joinfunction(hep.all) -> hep_merged.allrace
+
+# remove cell-specific data in individual races for identification of methylation-specific genes
+hepcleaned.all <- lapply(hep.all, function(x) select(x, -cluster, -zone, -celltype)) 
+
+# filter races for HCC methylation-associated genes
+# NOTE no genes found in matching between hepatocyte and HCC-methylated genes
+lapply(hep.all, function(x) filter(x, gene_name %in% methylation_add.gene))

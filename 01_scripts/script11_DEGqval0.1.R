@@ -1,12 +1,11 @@
 #-------------------------------------------------------------------------------------#
 # Project: Ballgown overlap
-# Purpose: Identify overlapping genes stratified across race
+# Purpose: Identify overlapping genes stratified across race with cutoff Qval < 0.1
 # Author: Artemio Sison III
 # R Version: 4.0.1 "Holding the Windsock"
 #-------------------------------------------------------------------------------------#
 
 # Install dependencies
-rm(list = ls())
 library(dplyr)
 library(stringr)
 
@@ -25,7 +24,7 @@ selectvar <- function(df){
 filter_deg <- function(df, cutoff){
   df %>% mutate(logfc = log2(fc)) %>% 
     mutate(abs_fc = abs(logfc)) %>% 
-    filter(qval < 0.05 & abs_fc > cutoff) %>% 
+    filter(qval < 0.1 & abs_fc > cutoff) %>% 
     arrange(desc(qval), abs_fc) %>%
     filter(str_detect(gene_name, "MSTRG*", negate = TRUE))
 }
@@ -38,7 +37,8 @@ filter_deg <- function(df, cutoff){
 # + select appropriate variables
 # + filter for DEG with FC > 2.0, create absFC, logFC, select genes with highest FC
 #-------------------------------------------------------------------------------------#
- fc.cutoff <- 1.0
+
+fc.cutoff <- 1.0
 # cutoff for addiitonal genes
 # fc.cutoff <- 0.5
 
@@ -64,11 +64,11 @@ joined.all %>%
 
 renamed.all %>% distinct(gene_name, .keep_all = TRUE) -> renamed.all
 
-write.csv(asiandeg, "./02_output/02_overlapDEGoutput/stage1/asian_degStage1_FC1.csv")
-write.csv(blackdeg, "./02_output/02_overlapDEGoutput/stage1/black_degStage1_FC1.csv")
-write.csv(whitedeg, "./02_output/02_overlapDEGoutput/stage1/white_degStage1_FC1.csv")
-# 
-# write.csv(renamed.all, "./02_output/02_overlapDEGoutput/stage1/allrace_overlapDEG_stage1_FC1.csv")
+write.csv(asiandeg, "./02_output/02_overlapDEGoutput/Stage1_qval0.1/asian_degStage1_q0.1.csv")
+write.csv(blackdeg, "./02_output/02_overlapDEGoutput/Stage1_qval0.1/black_degStage1_q0.1.csv.csv")
+write.csv(whitedeg, "./02_output/02_overlapDEGoutput/Stage1_qval0.1/white_degStage1_q0.1.csv")
+
+write.csv(renamed.all, "./02_output/02_overlapDEGoutput/Stage1_qval0.1/allrace_overlapDEG_degStage1_q0.1.csv")
 
 #FC 2.0
 # write.csv(asiandeg, "./02_output/02_overlapDEGoutput/asian_degStageA_FC2.csv")
