@@ -34,7 +34,8 @@ names(race_dfs) <- races
 
 clean_deg <- function(df, cutoff){
   df %>% select(gene_name, fc, qval, pval) %>%
-    mutate(logfc = log2(fc)) %>% mutate(abs_fc = abs(logfc)) %>% 
+    mutate(logfc = log2(fc)) %>% 
+    mutate(abs_fc = abs(logfc)) %>% 
     filter(qval < 0.05 & abs_fc > cutoff) %>% 
     arrange(desc(qval), abs_fc) %>%
     filter(str_detect(gene_name, "MSTRG*", negate = TRUE))
@@ -75,7 +76,6 @@ race_dfs <- lapply(race_dfs, clean_deg, 1.0)
 race_dfs <- lapply(race_dfs, retain_topfc)
 
 
-
 #-------------------------------------------------------------------------------------#
 # Create venn diagram
 # + overlap DEGs for each race
@@ -85,9 +85,9 @@ race_dfs <- lapply(race_dfs, retain_topfc)
 area1 = nrow(race_dfs$asian)
 area2 = nrow(race_dfs$black)
 area3 = nrow(race_dfs$white)
-n12 = nrow(inner_join(race_dfs$asian, race_dfs$black, by = "gene_name"))
-n23 = nrow(inner_join(race_dfs$black, race_dfs$white, by = "gene_name"))
-n13 = nrow(inner_join(race_dfs$asian, race_dfs$white, by = "gene_name"))
+n12   = nrow(inner_join(race_dfs$asian, race_dfs$black, by = "gene_name"))
+n23   = nrow(inner_join(race_dfs$black, race_dfs$white, by = "gene_name"))
+n13   = nrow(inner_join(race_dfs$asian, race_dfs$white, by = "gene_name"))
 n123 = nrow(joinfunction(race_dfs))
 
 # create grid for venn diagram
@@ -96,26 +96,26 @@ grid.newpage()
 # draw venn diagram 
 draw.triple.venn(area1 = area1, area2 = area2, area3 = area3, 
                  n12   = n12, n23 = n23, n13 = n13,
-                 n123 = n123, 
+                 n123  = n123, 
                  category = c(paste0("Asian (", area1, ")"),
-                            paste0("African-American (", area2,")"),
-                            paste0("Caucasian (", area3, ")")),
-                 lty      = "blank", 
-                 fill     = c("blue3", "pink3", "green4"),
-                 alpha = c(0.5, 0.5, 0.3), 
-                 cat.fontface = "bold",
-                 fontfamily = "Arial",
+                              paste0("African-American (", area2,")"),
+                              paste0("Caucasian (", area3, ")")),
+                 lty            = "blank", 
+                 fill           = c("blue3", "pink3", "green4"),
+                 alpha          = c(0.5, 0.5, 0.3), 
+                 cat.fontface   = "bold",
+                 fontfamily     = "Arial",
                  cat.fontfamily = "Arial",
-                 cat.pos = c(335, 15, 180),
-                 cat.just = list(c(-0.5, 0),  # asian
-                                 c(0.5,1),    # white
-                                 c(0.5,0.3)), # black
-                 cat.cex = 1.5,  # size for each category name
-                 cex = 2.5,  # size for each area label
-                 units = px,
-                 height = 3000,
-                 width = 3000,
-                 resolution = 800,
-                 output = TRUE,
-                 margin = 0.025)
+                 cat.pos        = c(335, 15, 180),
+                 cat.just       = list(c(-0.2, 0),  # asian
+                                       c(0.5,1),    # white
+                                       c(0.5,0.3)), # black
+                 cat.cex        = 1.5,  # size for each category name
+                 cex            = 2.5,  # size for each area label
+                 units          = px,
+                 height         = 3000,
+                 width          = 3000,
+                 resolution     = 800,
+                 output         = TRUE,
+                 margin         = 0.025)
 
