@@ -10,6 +10,7 @@
 #-------------------------------------------------------------------------------------#
 rm(list = ls())
 library(dplyr)
+library(stringr)
 
 #-------------------------------------------------------------------------------------#
 # Load DEG data
@@ -165,4 +166,16 @@ downreg <- bind_rows(top_downasian, top_downblack, top_downwhite)
 # write to csv
 #-------------------------------------------------------------------------------------#
 write.csv(upreg, "./02_output/10_diffgenes/upreg_fc1.csv")
-write.csv(downreg, "./02_output/10_diffgenes/downregfc2.csv")
+write.csv(downreg, "./02_output/10_diffgenes/downreg_fc1.csv")
+
+#-------------------------------------------------------------------------------------#
+# Write not just top 10 to csv
+#-------------------------------------------------------------------------------------#
+
+# rowbind into same dataset
+allupreg <- bind_rows(upasian_unique, upblack_unique, upwhite_unique)
+# rowbind into same dataset
+alldownreg <- bind_rows(downasian_unique, downblack_unique, downwhite_unique)
+
+write.csv(allupreg, "./02_output/10_diffgenes/upreg_all.csv")
+write.csv(alldownreg, "./02_output/10_diffgenes/downreg_all.csv")

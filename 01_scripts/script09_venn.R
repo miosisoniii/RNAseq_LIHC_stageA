@@ -8,17 +8,15 @@
 #-------------------------------------------------------------------------------------#
 # Install dependencies
 #-------------------------------------------------------------------------------------#
+rm(list = ls())
 library(dplyr)
 library(stringr)
-library(tidyr)
-library(purrr)
 library(VennDiagram)
 
 #-------------------------------------------------------------------------------------#
 # Input files
 # + Load BG output for transcripts
 #-------------------------------------------------------------------------------------#
-rm(list = ls())
 inputpaths <- dir("./00_data/stage1", full.names = TRUE)
 race_dfs <- lapply(inputpaths, function(x) read.delim(x))
 races <- c("asian", "black", "white")
@@ -75,7 +73,6 @@ race_dfs <- lapply(race_dfs, clean_deg, 1.0)
 
 race_dfs <- lapply(race_dfs, retain_topfc)
 
-
 #-------------------------------------------------------------------------------------#
 # Create venn diagram
 # + overlap DEGs for each race
@@ -94,24 +91,22 @@ n123 = nrow(joinfunction(race_dfs))
 grid.newpage()
 
 # draw venn diagram 
-draw.triple.venn(area1 = area1, area2 = area2, area3 = area3, 
+#venn diagram with labels on the outside of the circles
+draw.triple.venn(area1 = area1, area2 = area2, area3 = area3,
                  n12   = n12, n23 = n23, n13 = n13,
-                 n123  = n123, 
+                 n123  = n123,
                  category = c(paste0("Asian (", area1, ")"),
                               paste0("African-American (", area2,")"),
                               paste0("Caucasian (", area3, ")")),
-                 lty            = "blank", 
+                 lty            = "blank",
                  fill           = c("blue3", "pink3", "green4"),
-                 alpha          = c(0.5, 0.5, 0.3), 
+                 alpha          = c(0.5, 0.5, 0.3),
                  cat.fontface   = "bold",
                  fontfamily     = "Arial",
                  cat.fontfamily = "Arial",
-                 cat.pos        = c(335, 15, 180),
-                 cat.just       = list(c(-0.2, 0),  # asian
-                                       c(0.5,1),    # white
-                                       c(0.5,0.3)), # black
-                 cat.cex        = 1.5,  # size for each category name
-                 cex            = 2.5,  # size for each area label
+                 cat.cex        = 3.5,  # size for each category name
+                 cex            = 6,  # size for each area label
+                 fontface       = "bold",
                  units          = px,
                  height         = 3000,
                  width          = 3000,
