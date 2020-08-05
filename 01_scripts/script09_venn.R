@@ -100,12 +100,16 @@ draw.triple.venn(area1 = area1, area2 = area2, area3 = area3,
                               paste0("Caucasian (", area3, ")")),
                  lty            = "blank",
                  fill           = c("blue3", "pink3", "green4"),
-                 alpha          = c(0.5, 0.5, 0.3),
+                 alpha          = c(0.5, 0.5, 0.5),
                  cat.fontface   = "bold",
                  fontfamily     = "Arial",
                  cat.fontfamily = "Arial",
-                 cat.cex        = 3.5,  # size for each category name
-                 cex            = 6,  # size for each area label
+                 # position 0-360 degrees
+                 cat.pos        = c(-19,   # Asian position
+                                    19,   # African American position  
+                                    180), # Caucasian positon
+                 cat.cex        = 5,  # size for each category name
+                 cex            = 5,  # size for each area label
                  fontface       = "bold",
                  units          = px,
                  height         = 3000,
