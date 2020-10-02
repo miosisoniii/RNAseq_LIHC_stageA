@@ -13,6 +13,7 @@ library(dplyr)
 library(ggplot2)
 library(cowplot)
 
+
 #-------------------------------------------------------------------------------------#
 # Read GO term tables
 #-------------------------------------------------------------------------------------#
@@ -83,9 +84,80 @@ topGOout <- topGOout %>% mutate(FDR.value = -log(FDR.value))
 topGOtest <- topGOout %>% mutate(color = if_else(category == "GO Function", "green",
                                                  if_else(category == "GO Component", "blue", "red")))
 
-# reorder data for plotting
-topGOtest <- topGOtest[order(topGOtest$race, decreasing = FALSE),]
 
+
+
+#-------------------------------------------------------------------------------------#
+# Testing Barplot Code
+#-------------------------------------------------------------------------------------#
+# This code arranges the order of the race color in each bar
+topGOtesting <- topGOtest[order(topGOtest$race),]
+
+
+topGOtesting1 <- topGOtesting
+# create specific order to match the geom text
+topGOtesting1$race <- with(topGOtesting1, reorder(race, -FDR.value))
+
+
+plot <- ggplot(topGOtesting, aes(fill = race, 
+                              group = category,
+                              # Arranges bars in ascending order
+                              y = reorder(description, -FDR.value),
+                              x = FDR.value)) 
+
+plot + 
+  theme(axis.text = element_text(size = 12),
+        axis.text.y = element_text(color = topGOtesting$color)) +
+  scale_x_continuous(expand = expansion(mult = c(0, 0.05))) +
+  geom_bar(position = "stack", stat = "identity") +
+  geom_text(aes(label = color, col = color)) 
+#   theme_set(theme_classic()+
+#               theme(panel.grid.major.x = element_line(colour = 'grey60', linetype = 'dashed'),
+#                     panel.grid.major.y = element_line(colour = 'grey60', linetype = 'dashed'),
+#                     axis.ticks.y = element_blank(),
+#                     axis.text.x = element_text(colour = 'black', size = 16),
+#                     axis.ticks.x = element_line(colour = 'grey60'),
+#                     axis.ticks.length = unit(3, "mm"),
+#                     aspect.ratio = (600/450),
+#                     axis.title.x=element_blank(),
+#                     axis.title.y=element_blank()))
+#   
+# 
+# topGOtesting1 <- topGOtesting %>% arrange(-FDR.value) %>% 
+#   mutate(colour = factor(color, color), 
+#          description = factor(description, description))
+# 
+# 
+# 
+# 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# reorder data for plotting
+# topGOtest <- topGOtest[order(topGOtest$race, decreasing = FALSE),] # original code
+topGOtest <- topGOtest[order(topGOtest$race),]
+ 
 #-------------------------------------------------------------------------------------#
 # Plot Stacked Barplot
 #-------------------------------------------------------------------------------------#
@@ -93,19 +165,15 @@ topGOtest <- topGOtest[order(topGOtest$race, decreasing = FALSE),]
 topGOtest$description <- with(topGOtest, reorder(description, -FDR.value))
 cols <- c("GO Process" = "red", "GO Function" = "green", "GO Component" = "blue")
 
-# topGOtest$description <- factor(topGOtest$description, levels = c(""))
-
-# map based on average
-
-
-
-a <- ifelse(ave_GOtermtestcolor$category == "GO Function", "green",
-            ifelse(ave_GOtermtestcolor$category == "GO Component", "blue", "red"))
+# a <- ifelse(ave_GOtermtestcolor$category == "GO Function", "green",
+#             ifelse(ave_GOtermtestcolor$category == "GO Component", "blue", "red"))
+# a <- ifelse(topGOtest$category == "GO Function", "green",
+#             ifelse(topGOtest$category == "GO Component", "blue", "red"))
 
 plot <- ggplot(topGOtest, aes(fill = race, 
                               group = category,
-                              #y = description,
-                              y = reorder(description, -FDR.value),
+                              y = description,
+                              #y = reorder(description, -FDR.value),
                               x = FDR.value))
 
 plot + 
@@ -114,8 +182,10 @@ plot +
   scale_x_continuous(expand = expansion(mult = c(0, 0.05))) +
   geom_bar(position = "stack", stat = "identity") +
   # original code that worked
+  # theme(axis.text = element_text(size = 12),
+  #        axis.text.y = element_text(color = ave_GOtermtestcolor$color)) +
   theme(axis.text = element_text(size = 12),
-         axis.text.y = element_text(color = a)) +
+         axis.text.y = element_text(color = topGOtest$color)) +
         # legend.text = element_text(color = cols[topGOtest$color])) +
   
   # theme(axis.text.y = element_text(color = ifelse(topGOout$category == "GO Process", "red",

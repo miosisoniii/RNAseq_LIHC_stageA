@@ -56,14 +56,16 @@ plot + geom_bar(position = "dodge", stat = "identity")
 # colors
 colors <- c("blue", "orange", "gray")
 
-
 # Dodged barplot
 final <- plot + geom_bar(position = "dodge", stat = "identity") +
   # Labels for LogFC on each bar, adjusted for each bar label
   geom_text(aes(label = round(logfc, 2)), position = position_dodge(width = 0.9), vjust = 1.6) +
+  # Edit legend
+  scale_fill_discrete(name = "Ethnicity", labels = c("Asian", "African-American", "Caucasian")) + 
   ggtitle("Stage A HCC Liver Tissue Overlapping Transcripts") +
   xlab("Transcript") +
   ylab(expression(Log[2]~"Fold Change"))
+final
 
 # Save final image with appropriate size/dimensions
 ggsave("../02_output/11_barplot/stageAoverlap.jpeg", width = 8, height = 8)
